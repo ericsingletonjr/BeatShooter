@@ -183,12 +183,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770635277
 GameObject:
@@ -243,7 +243,6 @@ GameObject:
   - component: {fileID: 1371849924}
   - component: {fileID: 1371849923}
   - component: {fileID: 1371849925}
-  - component: {fileID: 1371849926}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -304,11 +303,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1371849920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.79, y: -1.63, z: 0}
+  m_LocalPosition: {x: -4.79, y: -1.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1371849923
 Rigidbody2D:
@@ -363,22 +362,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1371849920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36953a564f68a014c86d5302e4ea6e40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 10
---- !u!114 &1371849926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1371849920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03bd36f565f3a474eb0d129b678ab0ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 325efaaa21200a147977d5380eafa96a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   GravityModifier: 1
+  MinGroundNormalY: 0.65
+  Speed: 0
 --- !u!1 &1837644066
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,7 +379,7 @@ GameObject:
   - component: {fileID: 1837644069}
   - component: {fileID: 1837644068}
   - component: {fileID: 1837644070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FlatGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
