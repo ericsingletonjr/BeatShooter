@@ -91,6 +91,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 20
   rb2d: {fileID: 50056275064876180}
+  BeatFlag: 000102
+  CurrentBeatType: 0
 --- !u!212 &212366297932258856
 SpriteRenderer:
   m_ObjectHideFlags: 1
