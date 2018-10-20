@@ -27,6 +27,7 @@ public class Bullet : MonoBehaviour
             if (CurrentBeatType == block.BeatType)
             {
                 block.Remove();
+                BlockGrid.BlockCount--;
             }
         }
         Destroy(gameObject);

@@ -26,6 +26,7 @@ public class BeatWeapon : MonoBehaviour
 
     void Update()
     {
+        BeatSwitch();
         if (!_fired && Time.time > _timePressed + _beatDivision[BeatFlag])
         {
             _timePressed = Time.time;
@@ -41,5 +42,12 @@ public class BeatWeapon : MonoBehaviour
     void FireWeapon()
     {
         Instantiate(BulletPrefab, ProjectilePoint.position, ProjectilePoint.rotation).ChangeBeatFlag(BeatFlag);
+    }
+
+    void BeatSwitch()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1)) BeatFlag = 0;
+        if (Input.GetKeyDown(KeyCode.Alpha2)) BeatFlag = 1;
+        if (Input.GetKeyDown(KeyCode.Alpha3)) BeatFlag = 2;
     }
 }
