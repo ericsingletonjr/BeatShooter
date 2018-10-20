@@ -20,7 +20,6 @@ public class BlockGrid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(BlockCount);
         if(BlockCount == 0)
         {
             BlockCount = 90;

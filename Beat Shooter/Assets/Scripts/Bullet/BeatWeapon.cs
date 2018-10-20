@@ -26,6 +26,10 @@ public class BeatWeapon : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
         BeatSwitch();
         if (!_fired && Time.time > _timePressed + _beatDivision[BeatFlag])
         {
